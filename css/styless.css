@@ -1,0 +1,191 @@
+@font-face {
+	font-family: "Roboto", "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmZiArmlw.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE }
+
+
+
+
+body {
+font-family: "Roboto", sans-serif;
+color: #434455;
+background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+} 
+
+/*Хедер сторінки*/
+
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #4d5ae5;
+}
+
+ul {
+	list-style: none;
+}
+.nav-menu:active {
+	color: #404bbf;
+}
+
+.logo-studio {
+	font-family: "Raleway", sans-serif;
+	color: #2e2f42;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.nav-menu {
+	font-family: "Roboto";
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.nav-menu:hover {
+	color: #404bbf;
+}
+.nav-menu:focus {
+	color: #404bbf;
+}
+
+.link {
+	font-style: normal;
+}
+.link-link {
+	font-family: "Roboto";
+	color: #434455;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.link-link:hover {
+color: #404bbf;
+}
+.link-link:focus {
+color: #404bbf;
+}
+
+
+/*Унікальний контент сторінки*/
+/*Перша секція*/
+
+.dark-bg {
+	background-color: #2e2f42;
+}
+
+.title {
+	font-family: "Roboto";
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+.button {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	background-color: #4d5ae5;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	cursor: pointer;
+	letter-spacing: 0.04em;
+}
+.button:hover {
+	background-color: #404bbf;
+}
+.button:focus {
+	background-color: #404bbf;
+}
+
+/*Друга секція*/
+
+.title-advan {
+	font-family: "Roboto";
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+
+.title-text {
+	font-family: "Roboto";
+	color: #434455;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+/*Третя секція*/
+
+.team {
+background-color: #f4f4fd;
+}
+.title-our {
+	text-align: center;
+	font-family: "Roboto";
+	color: #2e2f42;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+}
+.team-card {
+	background-color: #ffffff;
+}
+
+.card {
+	font-family: "Roboto";
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+
+.text-card {
+	font-family: "Roboto";
+	color: #434455;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.logo-web-studio {
+	font-family: "Raleway";
+	color: #f4f4fd;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+}
+.text {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 16px;
+	color: #f4f4fd;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	
+}
