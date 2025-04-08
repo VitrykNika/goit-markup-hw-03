@@ -14,15 +14,58 @@ body {
 font-family: "Roboto", sans-serif;
 color: #434455;
 background-color: #ffffff;
+line-height: 1.5;
 }
-
+ul {
+	list-style-type: none;
+}
 a {
 	text-decoration: none;
 } 
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	
+}
+/* загальні */
+
+.container {
+	max-width: 1158px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 
 /*Хедер сторінки*/
 
+.page-header {
+	border-bottom: 1px solid #e7e9fc;
+}
 
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.nav-menu {
+	display: block;
+	padding: 24px 0;
+	font-family: "Roboto";
+	color: #2e2f42;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
 .logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -32,9 +75,20 @@ a {
 	text-transform: uppercase;
 	color: #4d5ae5;
 }
+.header-logo {
+	padding: 24px 0;
+	margin-right: 76px;
+}
 
-ul {
-	list-style: none;
+
+.nav-adress {
+display: flex;
+padding: 24px 0;
+gap: 40px;
+}
+.link {
+	font-style: normal;
+	margin-left: auto;
 }
 .nav-menu:active {
 	color: #404bbf;
@@ -49,25 +103,14 @@ ul {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
-.nav-menu {
-	font-family: "Roboto";
-	color: #2e2f42;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-}
-.nav-menu:hover {
-	color: #404bbf;
-}
+.nav-menu:hover,
 .nav-menu:focus {
 	color: #404bbf;
 }
 
-.link {
-	font-style: normal;
-}
 .link-link {
+	display: block;
+	padding: 24px 0;
 	font-family: "Roboto";
 	color: #434455;
 	font-weight: 400;
@@ -75,29 +118,35 @@ ul {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
-.link-link:hover {
-color: #404bbf;
-}
+.link-link:hover,
 .link-link:focus {
 color: #404bbf;
 }
-
 
 /*Унікальний контент сторінки*/
 /*Перша секція*/
 
 .dark-bg {
 	background-color: #2e2f42;
+	height: 600px;
 }
 
 .title {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	text-align: center;
 	letter-spacing: 0.02em;
+	padding-top: 188px;
+	padding-left: 472px;
+	padding-bottom: 48px;
+	width: 496px;
+}
+.title-dark {
+	display: flex;
+	align-items: center;
 }
 .button {
 	font-family: "Roboto", sans-serif;
@@ -108,15 +157,42 @@ color: #404bbf;
 	line-height: 1.5;
 	cursor: pointer;
 	letter-spacing: 0.04em;
+	padding: 16px 32px;
+	border: none;
+	margin-left: 635px;
+	margin-right: 635px;
+	display: flex;
 }
-.button:hover {
-	background-color: #404bbf;
-}
+
+.button:hover,
 .button:focus {
 	background-color: #404bbf;
 }
 
 /*Друга секція*/
+
+.visually-hidden {
+position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+.container-advan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.list-advan {
+display: flex;
+align-items: center;
+gap: 24px;
+margin-top: 120px;
+}
+.link-item {
+display: block;
+width: calc((1158px - 72px)/4);
+}
 
 .title-advan {
 	font-family: "Roboto";
@@ -134,12 +210,15 @@ color: #404bbf;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	margin-top: 8px;
 }
 
 /*Третя секція*/
 
 .team {
 background-color: #f4f4fd;
+height: 732px;
+margin-top: 120px;
 }
 .title-our {
 	text-align: center;
@@ -150,11 +229,34 @@ background-color: #f4f4fd;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
+	padding-top: 120px;
+	padding-bottom: 72px;
+}
+.list-team {
+	display: flex;
+	align-items: center;
+	gap: 24px;
 }
 .team-card {
 	background-color: #ffffff;
+	width: calc((1158px - 72px)/4);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 32px;
+	width: 264px;
+	height: 380px;
+	text-align: center;
+	border-radius: 0 0 4px 4px;
 }
+.card-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 8px;
 
+}
 .card {
 	font-family: "Roboto";
 	color: #2e2f42;
@@ -163,7 +265,6 @@ background-color: #f4f4fd;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 }
-
 .text-card {
 	font-family: "Roboto";
 	color: #434455;
@@ -172,7 +273,40 @@ background-color: #f4f4fd;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
-
+.portfolio-section {
+	padding: 120px 0;
+}
+.list-portfolio {
+display: flex;
+align-items:center;
+gap: 24px;
+margin-top: 120px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.link-portfolio {
+	background-color: #ffffff;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.portfolio-card img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.title-text-portfolio {
+	margin: 0;
+	padding: 0 16px;
+}
+.footer {
+	padding: 100px 0;
+	height: 312px;
+}
 .logo-web-studio {
 	font-family: "Raleway";
 	color: #f4f4fd;
@@ -187,5 +321,7 @@ background-color: #f4f4fd;
 	color: #f4f4fd;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	margin-top: 16px;
+	max-width: 264px;
 	
 }
