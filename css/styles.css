@@ -34,6 +34,9 @@ a {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
+img {
+	display: block;
+}
 
 /* загальні */
 
@@ -41,11 +44,6 @@ h1, h2, h3, h4, h5, h6, p {
 	max-width: 1158px;
 	padding: 0 15px;
 	margin: 0 auto;
-}
-.img {
-	display: block;
-	max-width: 100%;
-	height: auto;
 }
 
 /*Хедер сторінки*/
@@ -254,7 +252,6 @@ padding: 120px 0;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	gap: 32px;
 	height: 380px;
 	text-align: center;
 	border-radius: 0 0 4px 4px;
@@ -262,6 +259,7 @@ padding: 120px 0;
 .card-name {
 	display: block;
 	align-items: center;
+	padding: 32px 0;
 }
 .card {
 	font-family: "Roboto", sans-serif;
